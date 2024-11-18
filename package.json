@@ -1,0 +1,59 @@
+{
+  "name": "solid-draggable",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "node ./commands/deploy.js",
+    "buildAndDeploy": "npm run build && npm run deploy",
+    "build:lib": "node ./commands/build.js",
+    "release": "node ./commands/release.js",
+    "buildLibAndRelease": "npm run build:lib && npm run release",
+    "test": "vitest --watch=false",
+    "test:watch": "vitest",
+    "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,css}\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-typescript": "^7.24.7",
+    "@solidjs/router": "^0.14.7",
+    "@solidjs/testing-library": "^0.8.10",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@types/node": "^22.7.4",
+    "babel-preset-solid": "^1.9.0",
+    "classnames": "^2.5.1",
+    "consola": "^3.2.3",
+    "gh-pages": "^6.1.1",
+    "glob": "^11.0.0",
+    "prettier": "^3.3.3",
+    "solid-devtools": "^0.29.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-solid": "^2.8.2",
+    "vitest": "^2.1.2"
+  },
+  "peerDependencies": {
+    "classnames": "^2.5.1",
+    "solid-js": "^1.9.1"
+  },
+  "keywords": [
+    "solid",
+    "solid-js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sutras/solid-draggable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sutras/solid-draggable/issues"
+  },
+  "homepage": "https://github.com/sutras/solid-draggable#readme",
+  "author": "wuzhitao",
+  "license": "MIT"
+}
